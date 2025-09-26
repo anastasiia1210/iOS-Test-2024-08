@@ -26,6 +26,11 @@ class DummyViewController: UIViewController {
     setupUI()
   }
  
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        Services.reviewRequest.requestReview()
+    }
+    
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
   }
